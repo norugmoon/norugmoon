@@ -70,7 +70,7 @@ section {
     margin-bottom: 80px;
 }
 
-/* Home Section - Single Column */
+/* Home Section - Side by Side Layout */
 .home-section {
     display: flex;
     flex-direction: column;
@@ -81,26 +81,60 @@ section {
 }
 
 .home-content {
-    text-align: center;
-    margin-bottom: 40px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    align-items: center;
 }
 
-h1, h2 {
-    color: #ff6f61; /* Coral for headings */
+.home-text {
+    flex: 2;
+    text-align: left;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    color: #ff6f61;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
-h1 {
-    font-size: 48px;
+.home-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.home-image {
+    flex: 1;
+    text-align: right;
+}
+
+.section-image {
+    max-width: 150px; /* Smaller size for the logo */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Other Sections - Single Column */
+#about, #moonshot, #tokenomics, #roadmap, #whitepaper, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 h2 {
+    color: #ff6f61; /* Coral for headings */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 36px;
-    text-align: center;
 }
 
 p {
@@ -146,15 +180,6 @@ li {
 
 .btn:hover {
     background-color: #5a2db3;
-}
-
-.section-image {
-    display: block;
-    max-width: 300px; /* Adjusted for logo size */
-    width: 100%;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section */
@@ -250,6 +275,24 @@ footer p {
         padding: 40px 0;
     }
 
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .home-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .section-image {
+        max-width: 120px; /* Even smaller on mobile */
+    }
+
     h1 {
         font-size: 36px;
     }
@@ -276,11 +319,6 @@ footer p {
         height: 20px;
         line-height: 16px;
         font-size: 14px;
-    }
-
-    .section-image {
-        margin: 20px auto;
-        max-width: 200px; /* Adjusted for mobile */
     }
 }
 
