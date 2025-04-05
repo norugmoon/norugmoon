@@ -6,19 +6,17 @@
 
 body {
     font-family: 'Inter', Arial, sans-serif;
-    background: linear-gradient(180deg, #2b1a5e, #4a2c8b); /* Solana-inspired purple gradient */
-    color: #ffffff;
-    line-height: 1.8;
+    background: #ffffff; /* White background for readability */
+    color: #333333; /* Dark text for contrast */
+    line-height: 1.6;
     font-size: 16px;
-    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Subtle starry texture */
-    background-attachment: fixed;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 15px 30px; /* Reduced padding */
     background-color: #ff6f61; /* Coral for header */
     position: sticky;
     top: 0;
@@ -27,11 +25,11 @@ header {
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: 15px; /* Reduced margin */
 }
 
 .logo img {
-    height: 60px;
+    height: 50px; /* Slightly smaller logo in header */
     width: auto;
     display: block;
 }
@@ -51,7 +49,7 @@ header {
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px; /* Reduced margin */
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -59,33 +57,30 @@ nav a {
 }
 
 nav a:hover {
-    color: #7b3fe4; /* Solana purple for hover */
+    color: #4a90e2; /* Blue for hover */
 }
 
 main {
-    padding: 40px;
+    padding: 30px; /* Reduced padding */
 }
 
 section {
-    margin-bottom: 80px;
+    margin-bottom: 40px; /* Reduced margin between sections */
 }
 
 /* Home Section - Side by Side Layout */
 .home-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 80vh;
-    padding: 60px 0;
-    background: linear-gradient(180deg, rgba(123, 63, 228, 0.2), rgba(74, 44, 139, 0.2));
+    padding: 40px 0; /* Reduced padding */
+    background: linear-gradient(180deg, #f8f8f8, #ffffff); /* Subtle gradient for contrast */
 }
 
 .home-content {
     display: flex;
     max-width: 1200px;
     width: 100%;
-    gap: 40px;
+    gap: 30px; /* Reduced gap */
     align-items: center;
+    margin: 0 auto;
 }
 
 .home-text {
@@ -94,9 +89,9 @@ section {
 }
 
 .home-text h1 {
-    font-size: 48px;
-    color: #ff6f61;
-    margin-bottom: 20px;
+    font-size: 40px; /* Slightly smaller for compactness */
+    color: #ff6f61; /* Coral for headings */
+    margin-bottom: 15px; /* Reduced margin */
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -104,8 +99,8 @@ section {
 
 .home-text p {
     font-size: 16px;
-    margin-bottom: 15px;
-    color: #ffffff;
+    margin-bottom: 10px; /* Reduced margin */
+    color: #333333;
 }
 
 .home-image {
@@ -114,10 +109,10 @@ section {
 }
 
 .section-image {
-    max-width: 150px; /* Smaller size for the logo */
+    max-width: 120px; /* Even smaller logo for better fit */
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Other Sections - Single Column */
@@ -130,16 +125,16 @@ section {
 
 h2 {
     color: #ff6f61; /* Coral for headings */
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced margin */
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px; /* Slightly smaller */
 }
 
 p {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced margin */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -148,7 +143,7 @@ p {
 ul {
     list-style-type: disc;
     padding-left: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced margin */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -156,17 +151,18 @@ ul {
 
 li {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced margin */
 }
 
 .button-container {
     text-align: center;
+    margin-top: 10px; /* Reduced margin */
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #7b3fe4; /* Solana purple for buttons */
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #4a90e2; /* Blue for buttons */
     color: #ffffff;
     text-decoration: none;
     border-radius: 25px;
@@ -179,7 +175,7 @@ li {
 }
 
 .btn:hover {
-    background-color: #5a2db3;
+    background-color: #3a78c2;
 }
 
 /* Contact Section */
@@ -194,13 +190,13 @@ li {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    margin: 10px 20px;
+    margin: 5px 15px; /* Reduced margin */
     transition: color 0.3s ease;
     font-family: 'Poppins', sans-serif;
 }
 
 .social-link:hover {
-    color: #7b3fe4;
+    color: #4a90e2;
 }
 
 .social-icon {
@@ -221,7 +217,7 @@ li {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     background-color: #ff6f61;
     position: relative;
     bottom: 0;
@@ -241,7 +237,7 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
+        padding: 10px 20px; /* Further reduced padding */
     }
 
     .hamburger {
@@ -267,12 +263,12 @@ footer p {
 
     nav a {
         display: block;
-        margin: 10px 0;
+        margin: 8px 0; /* Reduced margin */
         text-align: center;
     }
 
     .home-section {
-        padding: 40px 0;
+        padding: 30px 0; /* Further reduced padding */
     }
 
     .home-content {
@@ -286,19 +282,19 @@ footer p {
 
     .home-image {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px; /* Reduced margin */
     }
 
     .section-image {
-        max-width: 120px; /* Even smaller on mobile */
+        max-width: 100px; /* Even smaller on mobile */
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 32px; /* Smaller for mobile */
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 26px; /* Smaller for mobile */
     }
 
     p, li {
@@ -307,7 +303,7 @@ footer p {
 
     .btn {
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 8px 16px; /* Reduced padding */
     }
 
     .social-link {
