@@ -93,11 +93,11 @@ section {
 }
 
 .section-image {
-    max-width: 120px;
+    max-width: 200px; /* Increased from 120px to 200px to make the logo bigger */
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 15px auto;
+    margin: 20px auto; /* Increased margin slightly for better spacing */
 }
 
 /* Other Sections - Single Column */
@@ -244,7 +244,8 @@ footer p {
     }
 
     .section-image {
-        max-width: 100px;
+        max-width: 150px; /* Increased from 100px to 150px for mobile */
+        margin: 15px auto; /* Adjusted margin for mobile */
     }
 
     h1 {
