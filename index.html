@@ -92,32 +92,40 @@
 
     <!-- JavaScript for Hamburger Menu -->
     <script>
+        // Get the hamburger and nav menu elements
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Toggle menu visibility on click
         function toggleMenu() {
-            if (window.innerWidth <= 768) {
-                const nav = document.querySelector('.nav-menu');
-                nav.classList.toggle('active');
-            }
+            navMenu.classList.toggle('active');
         }
 
+        // Add event listener for both click and touchstart to support mobile devices
+        hamburger.addEventListener('click', toggleMenu);
+        hamburger.addEventListener('touchstart', function(e) {
+            e.preventDefault(); // Prevent default touch behavior
+            toggleMenu();
+        });
+
+        // Handle window resize to ensure menu visibility is correct
         window.addEventListener('resize', function() {
-            const nav = document.querySelector('.nav-menu');
             if (window.innerWidth > 768) {
-                nav.classList.remove('active');
-                nav.style.display = 'flex';
+                navMenu.classList.remove('active');
+                navMenu.style.display = 'flex';
             } else {
-                nav.style.display = 'none';
-                if (nav.classList.contains('active')) {
-                    nav.style.display = 'flex';
+                if (!navMenu.classList.contains('active')) {
+                    navMenu.style.display = 'none';
                 }
             }
         });
 
+        // Set initial state on page load
         window.addEventListener('load', function() {
-            const nav = document.querySelector('.nav-menu');
             if (window.innerWidth > 768) {
-                nav.style.display = 'flex';
+                navMenu.style.display = 'flex';
             } else {
-                nav.style.display = 'none';
+                navMenu.style.display = 'none';
             }
         });
     </script>
