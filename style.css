@@ -40,6 +40,8 @@ header {
     font-size: 24px;
     cursor: pointer;
     color: #ffffff;
+    line-height: 1;
+    padding: 5px 10px; /* Add padding for better touch target on mobile */
 }
 
 .nav-menu {
@@ -93,11 +95,11 @@ section {
 }
 
 .section-image {
-    max-width: 200px; /* Increased from 120px to 200px to make the logo bigger */
+    max-width: 200px;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Increased margin slightly for better spacing */
+    margin: 20px auto;
 }
 
 /* Other Sections - Single Column */
@@ -217,7 +219,7 @@ footer p {
     }
 
     .nav-menu {
-        display: none;
+        display: none; /* Ensure menu is hidden by default on mobile */
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -230,7 +232,7 @@ footer p {
     }
 
     .nav-menu.active {
-        display: flex;
+        display: flex; /* Show menu when active class is added */
     }
 
     nav a {
@@ -244,8 +246,8 @@ footer p {
     }
 
     .section-image {
-        max-width: 150px; /* Increased from 100px to 150px for mobile */
-        margin: 15px auto; /* Adjusted margin for mobile */
+        max-width: 150px;
+        margin: 15px auto;
     }
 
     h1 {
