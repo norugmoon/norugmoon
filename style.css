@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #87CEEB;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover {
+    color: #1E90FF;
+}
+
+main {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+/* Home Section - Single Column */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding: 60px 0;
+    background: linear-gradient(180deg, #F0F8FF, #FFFFFF);
+}
+
+.home-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.how-to-buy {
+    background-color: #F5F5F5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+}
+
+.how-to-buy h2 {
+    font-size: 28px;
+    color: #1E90FF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.how-to-buy p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.how-to-buy ol {
+    list-style-type: decimal;
+    padding-left: 0;
+    margin: 0 auto 15px auto;
+    text-align: left;
+    max-width: 400px;
+}
+
+.how-to-buy li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.how-to-buy p:last-child {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #1E90FF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1E90FF;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+    background-color: #4682B4;
+}
+
+.section-image {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-link:hover {
+    color: #4682B4;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #1E90FF;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #87CEEB;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #87CEEB;
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .home-section {
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .how-to-buy {
+        padding: 20px;
+    }
+
+    .social-link {
+        font-size: 16px;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+        line-height: 16px;
+        font-size: 14px;
+    }
+
+    .section-image {
+        margin: 20px auto;
+    }
+}
+
+/* Ensure nav-menu is always visible on desktop */
+@media (min-width: 769px) {
+    .nav-menu {
+        display: flex !important;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+}
