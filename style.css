@@ -148,6 +148,15 @@ li {
     background-color: #5a2db3;
 }
 
+.section-image {
+    display: block;
+    max-width: 300px; /* Adjusted for logo size */
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Contact Section */
 #contact {
     text-align: center;
@@ -267,6 +276,11 @@ footer p {
         height: 20px;
         line-height: 16px;
         font-size: 14px;
+    }
+
+    .section-image {
+        margin: 20px auto;
+        max-width: 200px; /* Adjusted for mobile */
     }
 }
 
