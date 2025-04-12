@@ -13,7 +13,7 @@ body {
 /* Header */
 header {
     display: flex;
-    justify-content: flex-end; /* Align nav to the right */
+    justify-content: flex-end;
     align-items: center;
     padding: 20px 40px;
     background-color: #14213d;
@@ -50,14 +50,14 @@ nav ul li a:hover {
 }
 
 .main-title {
-    font-size: 4em; /* Largest font for the main title */
+    font-size: 4em;
     color: #f5a623;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for emphasis */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero-logo {
-    width: 150px; /* Adjust size of the mascot in the hero section */
+    width: 150px;
     margin-bottom: 20px;
 }
 
@@ -73,6 +73,8 @@ nav ul li a:hover {
 }
 
 .cta-buttons {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -90,6 +92,13 @@ nav ul li a:hover {
 
 .btn:hover {
     background-color: #e5941e;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 /* Sections */
@@ -187,4 +196,35 @@ footer {
     background-color: #14213d;
     color: #e0e0e0;
     border-top: 1px solid #2a3b5a;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        align-items: center;
+    }
+
+    .btn {
+        margin: 10px 0; /* Add vertical spacing between buttons */
+        width: 80%; /* Make buttons wider on mobile */
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 3em; /* Slightly smaller title on mobile */
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Adjust heading size for mobile */
+    }
+
+    .hero p {
+        font-size: 1.1em; /* Adjust paragraph size for mobile */
+    }
+
+    .intro-text {
+        font-size: 1em; /* Adjust intro text size for mobile */
+        padding: 0 20px; /* Add padding to prevent text from touching edges */
+    }
 }
