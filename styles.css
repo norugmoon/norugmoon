@@ -13,26 +13,11 @@ body {
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Align nav to the right */
     align-items: center;
     padding: 20px 40px;
     background-color: #14213d;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-    flex: 1;
-    text-align: center; /* Center the title */
-}
-
-.logo h1 {
-    font-size: 1.8em;
-    color: #f5a623;
-}
-
-nav {
-    flex: 1;
-    text-align: right; /* Align navigation to the right */
 }
 
 nav ul {
@@ -62,6 +47,13 @@ nav ul li a:hover {
     text-align: center;
     padding: 80px 20px;
     background: linear-gradient(to bottom, #14213d, #0d1b2a);
+}
+
+.main-title {
+    font-size: 4em; /* Largest font for the main title */
+    color: #f5a623;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for emphasis */
 }
 
 .hero-logo {
@@ -177,14 +169,14 @@ nav ul li a:hover {
 
 /* Disclaimer Section */
 #disclaimer {
-    background-color: #1b263b; /* Slightly darker background for emphasis */
+    background-color: #1b263b;
     border-top: 1px solid #2a3b5a;
     border-bottom: 1px solid #2a3b5a;
 }
 
 #disclaimer .text {
     max-width: 800px;
-    text-align: center; /* Center the disclaimer text */
+    text-align: center;
     margin: 0 auto;
 }
 
